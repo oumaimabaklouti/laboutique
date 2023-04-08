@@ -11,6 +11,10 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ asset ('assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/ledealer.css') }}">
+    {% block javascript %}
+    {% endblock %}
+    
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -60,7 +64,7 @@
             </div>
             
             <a href="{{ path('cart') }}">
-                <img src="{{ asset('assets/img/shopping-cart.png') }}" class="cart-icon" alt="Mon panier">
+                <img src="{{ asset('assets/img/ajouter-au-panier (1).png') }}" class="cart-icon" alt="Mon panier">
     </a>
         </div>
     </nav>
@@ -142,4 +146,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="{{ asset ('assets/js/bootstrap.bundle.js')}}"></script>
 </body>
+{% block script %}
+{% endblock %}
 </html>
